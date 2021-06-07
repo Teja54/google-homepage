@@ -1,67 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Homepage</title>
-    <link href="style.css" rel="stylesheet" type="text/css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Homepage</title>
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
-    <header>
-        <nav>
-          <ul>
-            <li><a href="#">Gmail</a></li>
-            <li><a href="#">Images</a></li>
-            <li id="sign_in"><a href="#">Sign In</a></li>
-          </ul>  
-        </nav>  
-      </header>  
-    
-      <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="google" class="center">
-      <div class="search">
-        <form>
-          <label for="search-box"></label>
-          <input class="placeholder-width" type="text" name="search-box" placeholder="&nbsp;&nbsp;&nbsp;Search Google" size="60"><br>
-        </form>
-      </div>
-      <div class="search hover-search">
-        <input class="submit-background" type="submit" value="Google search">
-        <input class="submit-background" type="submit" value="I'm Feeling Lucky">
-      </div>
-      <br>
-      <div class="offered">
-        <ul class="offerin">
-          <li>Google Offered in:</li>
-          <li><a href="#">हिन्दी</a></li> 
-          <li><a href="#">বাংলা</a></li>
-          <li><a href="#">తెలుగు</a></li>
-          <li><a href="#">मराठी</a></li> 
-          <li><a href="#">தமிழ்</a></li> 
-          <li><a href="#">ગુજરાતી</a></li>
-          <li><a href="#">ಕನ್ನಡ</a></li>
-          <li><a href="#">മലയാളം</a></li> 
-          <li><a href="#">ਪੰਜਾਬੀ</a></li>
+
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#">Gmail</a></li>
+        <li><a href="#">Images</a></li>
+        <li>
+          <img src="https://res.cloudinary.com/teja54/image/upload/v1623036363/tr_jkgxtm.jpg" alt="" class="profile"
+            title="Teja Devisetti">
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero">
+      <img src="https://res.cloudinary.com/teja54/image/upload/v1623035110/logo_ahtilr.svg" alt="google" class="logo">
+      <form>
+        <label>
+          <i class="fas fa-search"></i>
+          <input type="text" id="search" value="" autocomplete="off" />
+          <img src="https://res.cloudinary.com/teja54/image/upload/v1623037843/Google_mic_ppg9mb.svg" alt=""
+            class="mic">
+        </label>
+
+        <div class="btn-container">
+          <button type="submit" class="submit-btn">Google Search</button>
+          <button>I'm feeling lucky</button>
+        </div>
+      </form>
+    </section>
+
+    <section class="offer">
+      <ul class="offered_in">
+        <li>Google Offered in:</li>
+        <li><a href="#">हिन्दी</a></li>
+        <li><a href="#">বাংলা</a></li>
+        <li><a href="#">తెలుగు</a></li>
+        <li><a href="#">मराठी</a></li>
+        <li><a href="#">தமிழ்</a></li>
+        <li><a href="#">ગુજરાતી</a></li>
+        <li><a href="#">ಕನ್ನಡ</a></li>
+        <li><a href="#">മലയാളം</a></li>
+        <li><a href="#">ਪੰਜਾਬੀ</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="footer">
+      <p>India</p>
+      <hr>
+      <div class="footer-items">
+        <ul>
+          <li>Advertising</li>
+          <li>Business</li>
+          <li>About</li>
+          <li>How search works</li>
+        </ul>
+        <ul>
+          <li>Privacy</li>
+          <li>Terms</li>
+          <li>Settings</li>
         </ul>
       </div>
-      <div class="foot">
-        <p>India</p>
-      </div>
-      <hr>
-      <footer>
-        <div class="flex">
-          <ul>
-            <li>Advertising</li>
-            <li>Business</li>
-            <li>About</li>
-            <li>How search works</li>
-          </ul>
-          <ul>
-            <li>Privacy</li>
-            <li>Terms</li>
-            <li>Settings</li>
-          </ul>
-        </div>
-      </footer>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
 </body>
+
 </html>
